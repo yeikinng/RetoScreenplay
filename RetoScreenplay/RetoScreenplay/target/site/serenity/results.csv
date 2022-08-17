@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"login de usuario","login usuario exitoso","ERROR","2022-08-16T15:38:36.0384217-05:00[America/Bogota]","0.0","110.18"
+"Registro Usuario","Registro usuario exitoso","FAILURE","2022-08-16T15:14:34.4421008-05:00[America/Bogota]","0.0","99.88"

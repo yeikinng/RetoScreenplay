@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class login de usuario</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class login de usuario</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; login de usuario</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m57.40s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="login usuario exitoso"></a>
+<h3 class="failures">login usuario exitoso</h3>
+<span class="code">
+<pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=104.0.5112.81)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-S60UPCJ', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\57312\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54485}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 040e2bbcd6f809ed3bb2d3989401809d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at net.serenitybdd.core.pages.ClearContents.ofElement(ClearContents.java:14)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.clear(WebElementFacadeImpl.java:1308)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:818)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget.performAs(EnterValueIntoTarget.java:18)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$bsRLoFMP.performAs$accessor$Xj0ZYarp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$bsRLoFMP.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
+	at co.com.linio.Tasks.Login.performAs(Login.java:30)
+	at co.com.linio.Tasks.Login$ByteBuddy$k3yR2mBL.performAs$accessor$SEzFdYne(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at co.com.linio.Tasks.Login$ByteBuddy$k3yR2mBL.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
+	at co.com.linio.StepDefinitions.LoginStepDefinition.elIngreseLasCredenciales(LoginStepDefinition.java:43)
+	at ✽.el ingrese las credenciales(file:///C:/Users/57312/IdeaProjects/RetoScreenplay/src/test/resources/features/Login.feature:6)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">login usuario exitoso</td>
+<td class="failures">1m57.40s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>15:38:35.100 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/57312/IdeaProjects/RetoScreenplay/src/test/resources/features/Login.feature
+15:38:36.116 [Test worker] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+login usuario exitoso(login-de-usuario;login-usuario-exitoso)
+-------------------------------------------------------------------
+15:38:36.491 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Added feature login de usuario
+15:38:36.522 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Added feature Registro Usuario
+15:38:37.663 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: LoginStepDefinition.elUsuarioSeEncuentreEnLaPaqinaDeInicioDeSesion - {0} opens the #targetPage
+15:38:38.085 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+15:38:39.413 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=104 in cache (valid until 15:54:43 16/08/2022 COT)
+15:38:39.413 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome104=104.0.5112.79 in cache (valid until 23:32:52 16/08/2022 COT)
+15:38:39.413 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+15:38:39.444 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 104.0.5112.79 found in cache
+15:38:39.444 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\57312\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+15:38:40.679 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+15:38:40.679 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized --disable..., goog:chromeOptions: {args: [--start-maximized, --disable-popup-blocking], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+15:39:15.798 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Opening darkroom
+15:39:15.801 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Darkroom processing line starting up
+15:39:18.451 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\9dab4964873ecf7bd581b7e85ee3eb3da5a59b00d2134ed398efaf4f3ea5cd78.png
+15:39:18.482 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} opens the #targetPage
+15:39:18.858 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\9dab4964873ecf7bd581b7e85ee3eb3da5a59b00d2134ed398efaf4f3ea5cd78.png
+15:39:19.481 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\9dab4964873ecf7bd581b7e85ee3eb3da5a59b00d2134ed398efaf4f3ea5cd78.png
+15:39:19.481 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: LoginStepDefinition.elIngreseLasCredenciales - performAs
+15:39:19.716 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for aceptar alerta
+15:39:28.436 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for aceptar alerta
+15:39:37.057 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for aceptar alerta
+15:39:49.407 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for aceptar alerta
+15:39:50.110 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\b3e04a81f4f16075395ab66c4410492bf70e277c876dcd73abb8acfe3d74ba30.png
+15:39:50.113 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: Login.performAs - {0} clicks on #target
+15:39:50.114 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for aceptar alerta
+15:39:54.428 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\2b55fd4f93cb06c3000cbf3ced5c4c722cdfe457e0abe059b4b3ad434dbe3311.png
+15:39:54.472 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} clicks on #target
+15:39:54.823 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\2b55fd4f93cb06c3000cbf3ced5c4c722cdfe457e0abe059b4b3ad434dbe3311.png
+15:39:54.825 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: Login.performAs - {0} enters #theTextAsAString into #target
+15:39:54.826 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for ingresar el correo
+15:39:59.405 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\a2cc40993fb5e262fecc15130944cd47d9e8adab6a9352b25c025ba0757fc4fb.png
+15:39:59.405 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-1387773828698309020
+15:39:59.405 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\a2cc40993fb5e262fecc15130944cd47d9e8adab6a9352b25c025ba0757fc4fb.png
+15:39:59.452 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} enters #theTextAsAString into #target
+15:39:59.820 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\796a8e72ece2fad7f9728ae71fda07ef48322099c4efcd0458f8192b6765d9e4.png
+15:39:59.820 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-6306042417697384248
+15:39:59.820 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\796a8e72ece2fad7f9728ae71fda07ef48322099c4efcd0458f8192b6765d9e4.png
+15:39:59.820 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: Login.performAs - {0} enters #theTextAsAString into #target
+15:39:59.820 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for ingresar clave
+15:40:00.897 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\07c9b16326469bad82211e06b6cb512bc0e5b833587fbc1bbb102622e4d87e68.png
+15:40:00.897 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-13281873113240094590
+15:40:00.897 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\07c9b16326469bad82211e06b6cb512bc0e5b833587fbc1bbb102622e4d87e68.png
+15:40:00.939 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} enters #theTextAsAString into #target
+15:40:00.942 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for ingresar 
+15:40:01.551 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\b7829ba080879c140aa58b2456aa0ede90a6a8da2f353d6bc402dcc0fd4bf5d7.png
+15:40:01.552 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-15161777270587637385
+15:40:01.553 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\b7829ba080879c140aa58b2456aa0ede90a6a8da2f353d6bc402dcc0fd4bf5d7.png
+15:40:01.554 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: Login.performAs - {0} clicks on #target
+15:40:01.555 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for ingresar 
+15:40:04.287 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\8b7d6084ac62e4987ca84e03c4ecf98f517efef1d81f42a24dee5cf364be9849.png
+15:40:04.311 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} clicks on #target
+15:40:04.342 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: Login.performAs - {0} clicks on #target
+15:40:04.342 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for ingresar al menu 
+15:40:08.700 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\6572081b641a4b26285275d95cb3bca0573b52579ca20ddb3a362ac39a930a6e.png
+15:40:08.726 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} clicks on #target
+15:40:09.627 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\f08c81bfffda7e4c49c5a39d03cc1501797f08f6c3f227c399cffa6d59c01620.png
+15:40:09.628 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: Login.performAs - {0} clicks on #target
+15:40:09.629 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for seleccionar categoria 
+15:40:12.229 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\c322bc35bb5825f86ce17015a93fdc5cc8b71d99cb3eb6b44a2ea71d67aa863a.png
+15:40:12.230 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-8684683674278171677
+15:40:12.230 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\c322bc35bb5825f86ce17015a93fdc5cc8b71d99cb3eb6b44a2ea71d67aa863a.png
+15:40:13.510 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\d503851fac26a6b6e9e2764d77589b37d0593a40967874f9f48d1d068e2d3ca4.png
+15:40:13.510 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} clicks on #target
+15:40:14.566 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\d503851fac26a6b6e9e2764d77589b37d0593a40967874f9f48d1d068e2d3ca4.png
+15:40:14.566 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: Login.performAs - {0} clicks on #target
+15:40:14.566 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for seleccionar subcategoria 
+15:40:17.077 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\8bffd6c7ad43e16740f6ff02880a3c5713dd86ee8954ec7063e7aea00541cccc.png
+15:40:17.077 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-4796779751741203384
+15:40:17.077 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\8bffd6c7ad43e16740f6ff02880a3c5713dd86ee8954ec7063e7aea00541cccc.png
+15:40:17.093 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} clicks on #target
+15:40:17.124 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: Login.performAs - {0} clicks on #target
+15:40:17.124 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for seleccionar producto 
+15:40:22.403 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\63feaa70cc98d7862238c11979e06a69bf6e32f95ae0e4681712c1b6d1affc8b.png
+15:40:22.426 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} clicks on #target
+15:40:22.451 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: Login.performAs - {0} enters #theTextAsAString into #target
+15:40:22.453 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for ingresar producto 
+15:40:25.335 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\57312\IdeaProjects\RetoScreenplay\target\site\serenity\63feaa70cc98d7862238c11979e06a69bf6e32f95ae0e4681712c1b6d1affc8b.png
+15:40:29.009 [Test worker] ERROR  - 
+         __  _____ _____ ____ _____   _____ ____  ____   ___  ____  
+ _      / / |_   _| ____/ ___|_   _| | ____|  _ \|  _ \ / _ \|  _ \ 
+(_)____| |    | | |  _| \___ \ | |   |  _| | |_) | |_) | | | | |_) |
+ |_____| |    | | | |___ ___) || |   | |___|  _ &lt;|  _ &lt;| |_| |  _ &lt; 
+(_)    | |    |_| |_____|____/ |_|   |_____|_| \_\_| \_\\___/|_| \_\
+        \_\                                                         
+
+login usuario exitoso
+---------------------------------------------------------------------
+15:40:29.009 [Test worker] DEBUG  - RELATED ISSUES: 
+15:40:31.401 [Test worker] ERROR  -     Test failed at step: yeik enters 'balon futbol 5' into ingresar producto
+15:40:31.401 [Test worker] ERROR  -     element not interactable
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Starting ChromeDriver 103.0.5060.134 (8ec6fce403b3feb0869b0732eda8bd95011d333c-refs/branch-heads/5060@{#1262}) on port 23637
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1660682342.600][WARNING]: This version of ChromeDriver has not been tested with Chrome version 104.
+ago. 16, 2022 3:39:04 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1</a> at 16 ago. 2022 15:40:43</p>
+</div>
+</div>
+</body>
+</html>

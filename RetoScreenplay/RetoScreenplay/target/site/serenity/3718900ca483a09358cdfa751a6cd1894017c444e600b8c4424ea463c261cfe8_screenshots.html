@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="dea9b2bba6f373d06e43d91bf95e99da192839b758060bd9d63e0550ebe43ea2.html">Registro Usuario</a></span>
+                > <span class="truncate-60"><a
+                    href="3718900ca483a09358cdfa751a6cd1894017c444e600b8c4424ea463c261cfe8.html">Registro usuario exitoso </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 16-08-2022 15:14</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Registro Usuario </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">Registro usuario exitoso
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: Expected: (true) but: was (false)</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.linio.StepDefinitions.RegistroStepDefinition.elUsuarioVisualizaUnaVentanaConUnMensajeEstásAUnSoloPaso(RegistroStepDefinition.java:49)<br />✽.el usuario visualiza una ventana con un mensaje ¡Estás a un solo paso!(file:///C:/Users/57312/IdeaProjects/RetoScreenplay/src/test/resources/features/Registro.feature:7)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource2732169368679692430.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="68e73d6c46cf05013c5916dbc288719f435393cfe0dcfd5a4dc39c9f6e872ad9.png" title=" Dado el usuario se encuentre en la pagina de ingreso" width="1440"/>
+                <img src="68e73d6c46cf05013c5916dbc288719f435393cfe0dcfd5a4dc39c9f6e872ad9.png" title=" yeik opens the Registro page" width="1440"/>
+                <img src="68e73d6c46cf05013c5916dbc288719f435393cfe0dcfd5a4dc39c9f6e872ad9.png" title=" Dado el usuario se encuentre en la pagina de ingreso (completed)" width="1440"/>
+                <img src="2ea70657138ef5b889394a3a94a2bd179dc0dad6a2e487efccdcdc230c3181b0.png" title=" Cuando el usuario ingresa los datos de registro" width="1440"/>
+                <img src="2ea70657138ef5b889394a3a94a2bd179dc0dad6a2e487efccdcdc230c3181b0.png" title=" Yeik registro" width="1440"/>
+                <img src="2ea70657138ef5b889394a3a94a2bd179dc0dad6a2e487efccdcdc230c3181b0.png" title=" yeik clicks on aceptar alerta" width="1440"/>
+                <img src="68e73d6c46cf05013c5916dbc288719f435393cfe0dcfd5a4dc39c9f6e872ad9.png" title=" yeik clicks on aceptar alerta" width="1440"/>
+                <img src="68e73d6c46cf05013c5916dbc288719f435393cfe0dcfd5a4dc39c9f6e872ad9.png" title=" yeik clicks on aceptar alerta (completed)" width="1440"/>
+                <img src="5669d5d6043ef03c64b018ce530b77c2d3831aaa6c3b22cf014cbd59bf842b13.png" title=" yeik clicks on presionar sesion" width="1440"/>
+                <img src="5669d5d6043ef03c64b018ce530b77c2d3831aaa6c3b22cf014cbd59bf842b13.png" title=" yeik clicks on presionar sesion (completed)" width="1440"/>
+                <img src="5669d5d6043ef03c64b018ce530b77c2d3831aaa6c3b22cf014cbd59bf842b13.png" title=" yeik enters 'kevin' into ingresar Nombre" width="1440"/>
+                <img src="71c761ff4c8520ccff306a902f30e576f83f04a5c45ecb2db7b248ac0b1f4dda.png" title=" yeik enters 'kevin' into ingresar Nombre" width="1440"/>
+                <img src="71c761ff4c8520ccff306a902f30e576f83f04a5c45ecb2db7b248ac0b1f4dda.png" title=" yeik enters 'kevin' into ingresar Nombre (completed)" width="1440"/>
+                <img src="c090143ef8cff3e17b560114fdaba82684fff9141efc0d4c1260ba2ab06439f3.png" title=" yeik enters 'gomez' into ingresar Apellido" width="1440"/>
+                <img src="f9d967a31f5d3be0580d276f1bccbcb94dc3f9a528f2b73eb583224d1f18acce.png" title=" yeik enters 'gomez' into ingresar Apellido" width="1440"/>
+                <img src="f9d967a31f5d3be0580d276f1bccbcb94dc3f9a528f2b73eb583224d1f18acce.png" title=" yeik enters 'gomez' into ingresar Apellido (completed)" width="1440"/>
+                <img src="563306a26386106ca908ad1be1e1be7d001c9f22a22c614d4b8e437d0dc08900.png" title=" yeik enters 'yeison701quintana@gmail.com' into ingresar Correo" width="1440"/>
+                <img src="6d3fb973760984648fd7e1fcede3d26a1e412b8bb94749adb6bd0df7009cd597.png" title=" yeik enters 'yeison701quintana@gmail.com' into ingresar Correo" width="1440"/>
+                <img src="6d3fb973760984648fd7e1fcede3d26a1e412b8bb94749adb6bd0df7009cd597.png" title=" yeik enters 'yeison701quintana@gmail.com' into ingresar Correo (completed)" width="1440"/>
+                <img src="6d3fb973760984648fd7e1fcede3d26a1e412b8bb94749adb6bd0df7009cd597.png" title=" yeik enters 'programer10' into ingresar Clave" width="1440"/>
+                <img src="137a951256b52967a028c7c898af78cdb66159426370560813beb6721a493461.png" title=" yeik enters 'programer10' into ingresar Clave" width="1440"/>
+                <img src="137a951256b52967a028c7c898af78cdb66159426370560813beb6721a493461.png" title=" yeik enters 'programer10' into ingresar Clave (completed)" width="1440"/>
+                <img src="c181ce0e69b3b5bac25f3c6d564e071ca113dd21dfe3c7f189f7d4448facd6a3.png" title=" yeik enters '74301458' into ingresar Cedula" width="1440"/>
+                <img src="7a2292e2f1938e19f1af2a240780c816a1b4e1a8788cd5c4878f8aa4f596ffbd.png" title=" yeik enters '74301458' into ingresar Cedula" width="1440"/>
+                <img src="7a2292e2f1938e19f1af2a240780c816a1b4e1a8788cd5c4878f8aa4f596ffbd.png" title=" yeik enters '74301458' into ingresar Cedula (completed)" width="1440"/>
+                <img src="7a2292e2f1938e19f1af2a240780c816a1b4e1a8788cd5c4878f8aa4f596ffbd.png" title=" yeik clicks on marcar terminos y condiciones" width="1440"/>
+                <img src="c3523993800e3cd6603f310982e2c71d95baffc9a8f1dd607c75095dbc884b5b.png" title=" yeik clicks on marcar terminos y condiciones" width="1440"/>
+                <img src="c3523993800e3cd6603f310982e2c71d95baffc9a8f1dd607c75095dbc884b5b.png" title=" yeik clicks on marcar terminos y condiciones (completed)" width="1440"/>
+                <img src="c3523993800e3cd6603f310982e2c71d95baffc9a8f1dd607c75095dbc884b5b.png" title=" yeik clicks on marcar tratamiento de datos" width="1440"/>
+                <img src="302404d2d2aaa217f669b8ebd791f995c18bf2c6c0ddaa2477d090f75a9ed4e1.png" title=" yeik clicks on marcar tratamiento de datos" width="1440"/>
+                <img src="302404d2d2aaa217f669b8ebd791f995c18bf2c6c0ddaa2477d090f75a9ed4e1.png" title=" yeik clicks on marcar tratamiento de datos (completed)" width="1440"/>
+                <img src="a5d7d62884f1b312659e8de1c26fc247cffe0f2b9dd6633ef668cea2446a8210.png" title=" yeik clicks on Continuar Registro" width="1440"/>
+                <img src="d292cbd20ccb0b2ad331a9ba1e1bf221975eec8cca292260351bb11541962137.png" title=" yeik clicks on Continuar Registro" width="1440"/>
+                <img src="d292cbd20ccb0b2ad331a9ba1e1bf221975eec8cca292260351bb11541962137.png" title=" yeik clicks on Continuar Registro (completed)" width="1440"/>
+                <img src="d292cbd20ccb0b2ad331a9ba1e1bf221975eec8cca292260351bb11541962137.png" title=" Yeik registro (completed)" width="1440"/>
+                <img src="d292cbd20ccb0b2ad331a9ba1e1bf221975eec8cca292260351bb11541962137.png" title=" Cuando el usuario ingresa los datos de registro (completed)" width="1440"/>
+                <img src="d292cbd20ccb0b2ad331a9ba1e1bf221975eec8cca292260351bb11541962137.png" title=" Entonces el usuario visualiza una ventana con un mensaje &iexcl;Est&aacute;s a un solo paso!" width="1440"/>
+                <img src="d292cbd20ccb0b2ad331a9ba1e1bf221975eec8cca292260351bb11541962137.png" title=" Then el actor puede ver should be (true): <span class='failing-color'>FAILURE</span>" width="1440"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.3.31</span>
+</div>
+</body>
+</html>

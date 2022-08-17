@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="44c0fc9cbbfdcec3cbb13f14c8a21682e4f109bbac1e76516511f7327f0644fd.html">Login De Usuario</a></span>
+                > <span class="truncate-60"><a
+                    href="511d025976708668c9868fb87c512247ab2891044d8210c953ede32494a16ead.html">login usuario exitoso </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 16-08-2022 15:38</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Login De Usuario </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="error-color">login usuario exitoso
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element not interactable exception: element not interactable</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.ElementNotInteractableException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.linio.Tasks.Login.performAs(Login.java:30)<br />co.com.linio.StepDefinitions.LoginStepDefinition.elIngreseLasCredenciales(LoginStepDefinition.java:43)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:71)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:234)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource415689543331689611.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="9dab4964873ecf7bd581b7e85ee3eb3da5a59b00d2134ed398efaf4f3ea5cd78.png" title=" Dado el usuario se encuentre en la paqina de inicio de sesion" width="1440"/>
+                <img src="9dab4964873ecf7bd581b7e85ee3eb3da5a59b00d2134ed398efaf4f3ea5cd78.png" title=" yeik opens the Login page" width="1440"/>
+                <img src="9dab4964873ecf7bd581b7e85ee3eb3da5a59b00d2134ed398efaf4f3ea5cd78.png" title=" Dado el usuario se encuentre en la paqina de inicio de sesion (completed)" width="1440"/>
+                <img src="9dab4964873ecf7bd581b7e85ee3eb3da5a59b00d2134ed398efaf4f3ea5cd78.png" title=" Cuando el ingrese las credenciales" width="1440"/>
+                <img src="9dab4964873ecf7bd581b7e85ee3eb3da5a59b00d2134ed398efaf4f3ea5cd78.png" title=" Yeik login" width="1440"/>
+                <img src="b3e04a81f4f16075395ab66c4410492bf70e277c876dcd73abb8acfe3d74ba30.png" title=" yeik clicks on aceptar alerta" width="1440"/>
+                <img src="2b55fd4f93cb06c3000cbf3ced5c4c722cdfe457e0abe059b4b3ad434dbe3311.png" title=" yeik clicks on aceptar alerta" width="1440"/>
+                <img src="2b55fd4f93cb06c3000cbf3ced5c4c722cdfe457e0abe059b4b3ad434dbe3311.png" title=" yeik clicks on aceptar alerta (completed)" width="1440"/>
+                <img src="2b55fd4f93cb06c3000cbf3ced5c4c722cdfe457e0abe059b4b3ad434dbe3311.png" title=" yeik enters 'yeison701quintana@gmail.com' into ingresar el correo" width="1440"/>
+                <img src="a2cc40993fb5e262fecc15130944cd47d9e8adab6a9352b25c025ba0757fc4fb.png" title=" yeik enters 'yeison701quintana@gmail.com' into ingresar el correo" width="1440"/>
+                <img src="a2cc40993fb5e262fecc15130944cd47d9e8adab6a9352b25c025ba0757fc4fb.png" title=" yeik enters 'yeison701quintana@gmail.com' into ingresar el correo (completed)" width="1440"/>
+                <img src="796a8e72ece2fad7f9728ae71fda07ef48322099c4efcd0458f8192b6765d9e4.png" title=" yeik enters 'programer10' into ingresar clave" width="1440"/>
+                <img src="07c9b16326469bad82211e06b6cb512bc0e5b833587fbc1bbb102622e4d87e68.png" title=" yeik enters 'programer10' into ingresar clave" width="1440"/>
+                <img src="07c9b16326469bad82211e06b6cb512bc0e5b833587fbc1bbb102622e4d87e68.png" title=" yeik enters 'programer10' into ingresar clave (completed)" width="1440"/>
+                <img src="b7829ba080879c140aa58b2456aa0ede90a6a8da2f353d6bc402dcc0fd4bf5d7.png" title=" yeik clicks on ingresar " width="1440"/>
+                <img src="8b7d6084ac62e4987ca84e03c4ecf98f517efef1d81f42a24dee5cf364be9849.png" title=" yeik clicks on ingresar " width="1440"/>
+                <img src="8b7d6084ac62e4987ca84e03c4ecf98f517efef1d81f42a24dee5cf364be9849.png" title=" yeik clicks on ingresar  (completed)" width="1440"/>
+                <img src="8b7d6084ac62e4987ca84e03c4ecf98f517efef1d81f42a24dee5cf364be9849.png" title=" yeik clicks on ingresar al menu " width="1440"/>
+                <img src="6572081b641a4b26285275d95cb3bca0573b52579ca20ddb3a362ac39a930a6e.png" title=" yeik clicks on ingresar al menu " width="1440"/>
+                <img src="6572081b641a4b26285275d95cb3bca0573b52579ca20ddb3a362ac39a930a6e.png" title=" yeik clicks on ingresar al menu  (completed)" width="1440"/>
+                <img src="f08c81bfffda7e4c49c5a39d03cc1501797f08f6c3f227c399cffa6d59c01620.png" title=" yeik clicks on seleccionar categoria " width="1440"/>
+                <img src="c322bc35bb5825f86ce17015a93fdc5cc8b71d99cb3eb6b44a2ea71d67aa863a.png" title=" yeik clicks on seleccionar categoria " width="1440"/>
+                <img src="d503851fac26a6b6e9e2764d77589b37d0593a40967874f9f48d1d068e2d3ca4.png" title=" yeik clicks on seleccionar categoria  (completed)" width="1440"/>
+                <img src="d503851fac26a6b6e9e2764d77589b37d0593a40967874f9f48d1d068e2d3ca4.png" title=" yeik clicks on seleccionar subcategoria " width="1440"/>
+                <img src="8bffd6c7ad43e16740f6ff02880a3c5713dd86ee8954ec7063e7aea00541cccc.png" title=" yeik clicks on seleccionar subcategoria " width="1440"/>
+                <img src="8bffd6c7ad43e16740f6ff02880a3c5713dd86ee8954ec7063e7aea00541cccc.png" title=" yeik clicks on seleccionar subcategoria  (completed)" width="1440"/>
+                <img src="8bffd6c7ad43e16740f6ff02880a3c5713dd86ee8954ec7063e7aea00541cccc.png" title=" yeik clicks on seleccionar producto " width="1440"/>
+                <img src="63feaa70cc98d7862238c11979e06a69bf6e32f95ae0e4681712c1b6d1affc8b.png" title=" yeik clicks on seleccionar producto " width="1440"/>
+                <img src="63feaa70cc98d7862238c11979e06a69bf6e32f95ae0e4681712c1b6d1affc8b.png" title=" yeik clicks on seleccionar producto  (completed)" width="1440"/>
+                <img src="63feaa70cc98d7862238c11979e06a69bf6e32f95ae0e4681712c1b6d1affc8b.png" title=" yeik enters 'balon futbol 5' into ingresar producto " width="1440"/>
+                <img src="63feaa70cc98d7862238c11979e06a69bf6e32f95ae0e4681712c1b6d1affc8b.png" title=" yeik enters 'balon futbol 5' into ingresar producto  (completed): <span class='error-color'>ERROR</span>" width="1440"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.3.31</span>
+</div>
+</body>
+</html>
